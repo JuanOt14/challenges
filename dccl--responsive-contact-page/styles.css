@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;300;500&display=swap');
+:root{
+    font-family: 'Be Vietnam Pro';
+    --purple: #4036A9;
+    --light: #CDD5E0;
+    --dark: #111729;
+    --white: #F8FAFC;
+}
+
+body{
+    background: url(./bg-image.svg) no-repeat left top;
+    background-size: cover;
+    padding: 1rem;
+    color: var(--white);
+}
+h1, h3{
+    margin: 0;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title h1{
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+.title h3{
+    margin-top: 1rem;
+    font-weight: 300;
+    font-size: 1rem;
+}
+.title img{
+    align-self: flex-start;
+}
+
+.form-container{
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: fit-content;
+    min-width: 20rem;
+    max-width: 50rem;
+}
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-weight: 200;
+    font-size: 14px;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    display: block;
+    margin-top: 1rem;
+}
+input, select{
+    display: block;
+    background-color: var(--white);
+    border-radius: .5rem;
+    border: none;
+    height: 2rem;
+    padding-left: 1rem;
+}
+#input-message{
+    height: 5rem;
+    text-align: start;
+    text-justify: auto;
+}
+#btn-submit{
+    display: block;
+    width: 100%;
+    color: var(--purple);
+    font-weight: 500;
+    margin-top: 1rem;
+    height: 3rem;
+}
+
+@media  screen and (min-width: 1024px) {
+    .form-container form{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .container-input{
+        width: 49%;
+    }
+    .container-input-message{
+        width: 100%;
+    }
+}
